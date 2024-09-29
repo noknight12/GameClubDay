@@ -5,7 +5,7 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     string statusEffect;
-
+    public int Dmg_Taken;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,7 +18,7 @@ public class Enemy : MonoBehaviour
         
     }
 
-    public void TakeHit(int inputDmg)
+    public void TakeHit()
     {
 
     }
