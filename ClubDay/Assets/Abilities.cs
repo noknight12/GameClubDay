@@ -96,6 +96,8 @@ public class Abilities : MonoBehaviour
         //aoe differnt
         target.Dmg_Taken = Dmg_inflicted;
     }
+    //dvsdfhdgdfrfutyitg
+    
 
     void Mage_Mist_AOE(CharacterInfo user, Enemy target)
     {
