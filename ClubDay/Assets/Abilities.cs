@@ -106,7 +106,7 @@ public class Abilities : MonoBehaviour
     }
     void Mage_heavy(CharacterInfo user, Enemy target)
     {
-        Dmg_inflicted = 60
+        Dmg_inflicted = 60;
         target.Dmg_Taken = Dmg_inflicted;
     }
 
