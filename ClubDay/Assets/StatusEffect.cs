@@ -25,6 +25,11 @@ public class StatusEffect : MonoBehaviour
     {
         
     }
+    
+    void StatusRunner(string statusName)
+    {
+        Invoke(statusName, 2.0f);
+    }
     //status effects go below 
 
 

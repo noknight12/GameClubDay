@@ -141,13 +141,13 @@ public class Abilities : MonoBehaviour
     }
     void Boss_Normal(Enemy user, CharacterInfo target)
     {
-        //applies "bleeding" status effect makes target lose 5 percent hp each turn for 2 turns 
+        //applies "poison" status effect makes target lose 5 percent hp each turn for 2 turns 
         Dmg_inflicted = 50;
         target.Dmg_TakenChar = Dmg_inflicted;
     }
     void Boss_Heavy(Enemy user, CharacterInfo target)
     {
-        //inflicts "bleeding"
+        //inflicts "poisoin"
         //aoe applies status effect " Boss_heavy" on the side targets that deals 50 percent of dmg the dmg inflicted on orignial target
         Dmg_inflicted = 70; 
         target.Dmg_TakenChar = Dmg_inflicted;
