@@ -2,18 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CharacterInfo : MonoBehaviour
+public class Card : MonoBehaviour
 {
-    public int Dmg_TakenChar;
-    public int health;
-    public int stamina;
-    public int mana;
-    public int numberOfAbilities;
-
-    public GameObject charCard;
-    public GameObject abilityCards;
-   
     // Start is called before the first frame update
+    public bool isChar = false;
+    public bool isAbility = false;
+    public bool isEnemy = false;
     void Start()
     {
         

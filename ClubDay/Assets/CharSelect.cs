@@ -5,16 +5,36 @@ using UnityEngine;
 public class CharSelect : MonoBehaviour
 {
 
-   public CharacterInfo characterInfo;
-   public TurnSystem turnSystem;
-   public UIManager manager;
-   
+    public CharacterInfo selectedChar;
+    public TurnSystem turnSystem;
+    public UIManager manager;
+    int charCount;
+
+    public CharacterInfo[] characters;
 
   
     void Select()
     {
-        turnSystem.currentCharacter = characterInfo;
+        
         manager.charAbilityMenu.SetActive(true);
 
+    }
+
+    private void Start()
+    {
+        charCount = 0;
+    }
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.RightArrow) && charCount < characters.Length && charCount >= 0) 
+        {
+            charCount++;
+            selectedChar = characters[charCount];
+        }
+        else if(Input.GetKeyDown(KeyCode.RightArrow) && charCount < characters.Length && charCount >= 0)
+             {
+            charCount--;
+            selectedChar = characters[charCount];
+        }
     }
 }

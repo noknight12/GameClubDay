@@ -2,14 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class StatusEffect : MonoBehaviour
+public class AbilityCard : Card
 {
 
-    string statusEffectName;
+  
     // Start is called before the first frame update
     void Start()
     {
-        
+        isAbility = true;   
     }
 
     // Update is called once per frame
