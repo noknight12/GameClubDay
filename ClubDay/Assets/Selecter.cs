@@ -6,7 +6,7 @@ using UnityEngine.TextCore.Text;
 public class Selecter : MonoBehaviour
 {
 
-   
+    public Animator animator;
 
     public int selectStage = 1;
 
