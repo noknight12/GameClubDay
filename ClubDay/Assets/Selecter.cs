@@ -12,7 +12,7 @@ public class Selecter : MonoBehaviour
 
     public CardGroup abilityGroup;
     public CardGroup charGroup;
-    public CardGroup EnemyGroup;
+    public CardGroup enemyGroup;
     public CardGroup currentGroup;
 
     public CharacterInfo selectedChar;
@@ -32,6 +32,7 @@ public class Selecter : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        charCount = charGroup.cards.Length;
         
     }
 
@@ -61,6 +62,19 @@ public class Selecter : MonoBehaviour
         {
             currentGroup = charGroup;
         }
+        else if (selectStage == 2)
+        {
+            abilityGroup = selectedChar.abilityCards;
+            currentGroup = abilityGroup;
 
+        }
+        else if (selectStage == 3)
+        {
+            currentGroup = enemyGroup;
+        }
+        else
+        {
+            Debug.LogError("wuh oh");
+        }
     }
 }
