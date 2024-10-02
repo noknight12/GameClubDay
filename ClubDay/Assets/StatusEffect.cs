@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class StatusEffect : MonoBehaviour
 {
+    //it shouldnt be an intereger
+    int targetchars = 0;
+    //target of status
+    //
+
     // Start is called before the first frame update
     void Start()
     {
@@ -13,6 +18,15 @@ public class StatusEffect : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+    }
+    
+    void statusManager(int targetchars)
+    {
         
     }
+    //status effects go below 
+
+
+
 }
