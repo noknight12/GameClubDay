@@ -20,6 +20,6 @@ public class EnemyActionManager : MonoBehaviour
 
     void EnemyAction(string abilityName, CharacterInfo target)
     {
-        
+        abilities.RunEnemyAbility(abilityName, target);
     }
 }
