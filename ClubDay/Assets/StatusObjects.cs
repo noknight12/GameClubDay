@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class StatusObjects: MonoBehaviour
 {
+    int priority;
+    int tick;
+    string statusName;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,6 +18,15 @@ public class StatusObjects: MonoBehaviour
     {
         
     }
+
+    public StatusObjects(int priority, int tick, string statusName)
+    {
+        this.priority = priority;
+        this.tick = tick;
+        this.statusName = statusName;
+    }
+
+
 
 
 }
