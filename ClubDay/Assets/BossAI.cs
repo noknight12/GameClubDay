@@ -22,6 +22,7 @@ public class BossAI : Enemy
     void Boss_Think()
     {
         ChooseRandomChar();
+        Attack();
     }
     void ChooseRandomChar()
     {
@@ -36,6 +37,10 @@ public class BossAI : Enemy
 
         // Display the selected string in the console
         Debug.Log("Random String Selected: " + selectedString);
+    }
+    void Attack()
+    {
+
     }
 
     // Update is called once per frame
