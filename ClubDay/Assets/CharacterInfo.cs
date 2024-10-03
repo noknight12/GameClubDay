@@ -10,7 +10,8 @@ public class CharacterInfo : MonoBehaviour
     public int mana;
     public int numberOfAbilities;
 
-    public CardGroup charCard;
+    public CardGroup CardGroup;
+    public Card characterCard;
     public CardGroup abilityCards;
    
     // Start is called before the first frame update
