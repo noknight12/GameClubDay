@@ -10,6 +10,11 @@ public class CharacterInfo : MonoBehaviour
     public int mana;
     public int numberOfAbilities;
 
+
+    public bool isMage;
+    public bool isTank;
+    public bool isRange;
+
     public CardGroup CardGroup;
     public Card characterCard;
     public CardGroup abilityCards;

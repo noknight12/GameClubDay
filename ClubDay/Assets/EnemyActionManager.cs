@@ -18,8 +18,8 @@ public class EnemyActionManager : MonoBehaviour
         
     }
 
-    void EnemyAction(string abilityName, CharacterInfo target)
+    void EnemyAction(string abilityName, CharacterInfo target, Enemy user)
     {
-        abilities.RunEnemyAbility(abilityName, target);
+        abilities.RunEnemyAbility(abilityName, target, user);
     }
 }

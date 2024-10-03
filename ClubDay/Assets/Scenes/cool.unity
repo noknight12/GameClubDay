@@ -622,6 +622,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isChar: 0
+  characterInfo: {fileID: 0}
+  bossAI: {fileID: 0}
+  minion: {fileID: 0}
+  abilityName: 
   isAbility: 1
   isEnemy: 0
 --- !u!1 &192880686
@@ -667,13 +671,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 192880686}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a2ef314ce08533429bc58e50ce33193, type: 3}
+  m_Script: {fileID: 11500000, guid: a4d57540ae6371d41996872261bf170a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isChar: 1
+  isChar: 0
+  characterInfo: {fileID: 1849694536}
+  bossAI: {fileID: 0}
+  minion: {fileID: 0}
+  abilityName: 
   isAbility: 0
   isEnemy: 0
-  Character: {fileID: 1849694536}
 --- !u!1 &215199278
 GameObject:
   m_ObjectHideFlags: 0
@@ -891,8 +898,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cards:
   - {fileID: 192880688}
-  - {fileID: 1116352753}
   - {fileID: 1159484575}
+  - {fileID: 1116352753}
 --- !u!1 &312134528
 GameObject:
   m_ObjectHideFlags: 0
@@ -940,6 +947,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isChar: 0
+  characterInfo: {fileID: 0}
+  bossAI: {fileID: 0}
+  minion: {fileID: 0}
+  abilityName: 
   isAbility: 1
   isEnemy: 0
 --- !u!1 &324593950
@@ -1073,6 +1084,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isChar: 0
+  characterInfo: {fileID: 0}
+  bossAI: {fileID: 0}
+  minion: {fileID: 0}
+  abilityName: 
   isAbility: 1
   isEnemy: 0
 --- !u!1 &373282940
@@ -1290,6 +1305,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isChar: 0
+  characterInfo: {fileID: 0}
+  bossAI: {fileID: 0}
+  minion: {fileID: 0}
+  abilityName: 
   isAbility: 0
   isEnemy: 1
 --- !u!1 &446857969
@@ -1339,6 +1358,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isChar: 0
+  characterInfo: {fileID: 0}
+  bossAI: {fileID: 0}
+  minion: {fileID: 0}
+  abilityName: 
   isAbility: 1
   isEnemy: 0
 --- !u!1 &448917299
@@ -1606,6 +1629,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isChar: 0
+  characterInfo: {fileID: 0}
+  bossAI: {fileID: 0}
+  minion: {fileID: 0}
+  abilityName: 
   isAbility: 1
   isEnemy: 0
 --- !u!1 &568662887
@@ -1654,6 +1681,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isChar: 0
+  characterInfo: {fileID: 0}
+  bossAI: {fileID: 0}
+  minion: {fileID: 0}
+  abilityName: 
   isAbility: 1
   isEnemy: 0
 --- !u!1 &645446384
@@ -1703,6 +1734,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isChar: 0
+  characterInfo: {fileID: 0}
+  bossAI: {fileID: 0}
+  minion: {fileID: 0}
+  abilityName: 
   isAbility: 1
   isEnemy: 0
 --- !u!1 &681458274
@@ -2140,6 +2175,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isChar: 0
+  characterInfo: {fileID: 0}
+  bossAI: {fileID: 0}
+  minion: {fileID: 0}
+  abilityName: 
   isAbility: 1
   isEnemy: 0
 --- !u!1 &728900926
@@ -2357,6 +2396,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isChar: 0
+  characterInfo: {fileID: 0}
+  bossAI: {fileID: 0}
+  minion: {fileID: 0}
+  abilityName: 
   isAbility: 1
   isEnemy: 0
 --- !u!1 &818166186
@@ -2405,6 +2448,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isChar: 0
+  characterInfo: {fileID: 0}
+  bossAI: {fileID: 0}
+  minion: {fileID: 0}
+  abilityName: 
   isAbility: 1
   isEnemy: 0
 --- !u!1 &822544630
@@ -3095,6 +3142,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isChar: 0
+  characterInfo: {fileID: 0}
+  bossAI: {fileID: 0}
+  minion: {fileID: 0}
+  abilityName: 
   isAbility: 1
   isEnemy: 0
 --- !u!1 &994662678
@@ -3148,7 +3199,7 @@ MonoBehaviour:
   mana: 0
   numberOfAbilities: 0
   CardGroup: {fileID: 294084071}
-  characterCard: {fileID: 1159484575}
+  characterCard: {fileID: 0}
   abilityCards: {fileID: 1711898897}
 --- !u!1 &1019331000
 GameObject:
@@ -3281,6 +3332,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isChar: 0
+  characterInfo: {fileID: 0}
+  bossAI: {fileID: 0}
+  minion: {fileID: 0}
+  abilityName: 
   isAbility: 1
   isEnemy: 0
 --- !u!1 &1061148645
@@ -3662,13 +3717,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1116352751}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a2ef314ce08533429bc58e50ce33193, type: 3}
+  m_Script: {fileID: 11500000, guid: a4d57540ae6371d41996872261bf170a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isChar: 1
+  characterInfo: {fileID: 1577430232}
+  bossAI: {fileID: 0}
+  minion: {fileID: 0}
+  abilityName: 
   isAbility: 0
   isEnemy: 0
-  Character: {fileID: 1577430232}
 --- !u!1 &1135307335
 GameObject:
   m_ObjectHideFlags: 0
@@ -3716,6 +3774,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isChar: 0
+  characterInfo: {fileID: 0}
+  bossAI: {fileID: 0}
+  minion: {fileID: 1429777747}
+  abilityName: 
   isAbility: 0
   isEnemy: 1
 --- !u!1 &1159484573
@@ -3761,13 +3823,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1159484573}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a2ef314ce08533429bc58e50ce33193, type: 3}
+  m_Script: {fileID: 11500000, guid: a4d57540ae6371d41996872261bf170a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isChar: 1
+  isChar: 0
+  characterInfo: {fileID: 994662680}
+  bossAI: {fileID: 0}
+  minion: {fileID: 0}
+  abilityName: 
   isAbility: 0
   isEnemy: 0
-  Character: {fileID: 994662680}
 --- !u!1 &1162938544
 GameObject:
   m_ObjectHideFlags: 0
@@ -3861,6 +3926,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1172637937}
+  - component: {fileID: 1172637938}
   m_Layer: 0
   m_Name: Minion1
   m_TagString: Untagged
@@ -3884,6 +3950,22 @@ Transform:
   - {fileID: 373282941}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1172637938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1172637936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5969a50f273e8f428394224a77e6034, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dmg_Taken: 0
+  HP: 59
+  Defence: 0
+  AtkMulti: 0
 --- !u!1 &1225377632
 GameObject:
   m_ObjectHideFlags: 0
@@ -4015,6 +4097,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isChar: 0
+  characterInfo: {fileID: 0}
+  bossAI: {fileID: 0}
+  minion: {fileID: 0}
+  abilityName: 
   isAbility: 1
   isEnemy: 0
 --- !u!1 &1251769936
@@ -4247,6 +4333,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1429777746}
+  - component: {fileID: 1429777747}
   m_Layer: 0
   m_Name: Minion2
   m_TagString: Untagged
@@ -4270,6 +4357,22 @@ Transform:
   - {fileID: 121150203}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1429777747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1429777745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5969a50f273e8f428394224a77e6034, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dmg_Taken: 0
+  HP: 36
+  Defence: 0
+  AtkMulti: 0
 --- !u!1 &1435550163
 GameObject:
   m_ObjectHideFlags: 0
@@ -4485,6 +4588,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isChar: 0
+  characterInfo: {fileID: 0}
+  bossAI: {fileID: 0}
+  minion: {fileID: 0}
+  abilityName: 
   isAbility: 1
   isEnemy: 0
 --- !u!1 &1487912343
@@ -4706,7 +4813,7 @@ MonoBehaviour:
   mana: 0
   numberOfAbilities: 0
   CardGroup: {fileID: 294084071}
-  characterCard: {fileID: 1116352753}
+  characterCard: {fileID: 0}
   abilityCards: {fileID: 499926694}
 --- !u!1 &1579191534
 GameObject:
@@ -4891,6 +4998,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isChar: 0
+  characterInfo: {fileID: 0}
+  bossAI: {fileID: 0}
+  minion: {fileID: 0}
+  abilityName: 
   isAbility: 1
   isEnemy: 0
 --- !u!1 &1715845087
@@ -4923,7 +5034,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cards:
-  - {fileID: 0}
+  - {fileID: 1902655022}
+  - {fileID: 1135307337}
 --- !u!4 &1715845089
 Transform:
   m_ObjectHideFlags: 0
@@ -5329,7 +5441,7 @@ MonoBehaviour:
   mana: 0
   numberOfAbilities: 0
   CardGroup: {fileID: 294084071}
-  characterCard: {fileID: 192880688}
+  characterCard: {fileID: 0}
   abilityCards: {fileID: 681458275}
 --- !u!1 &1851737286
 GameObject:
@@ -5462,6 +5574,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isChar: 0
+  characterInfo: {fileID: 0}
+  bossAI: {fileID: 0}
+  minion: {fileID: 1172637938}
+  abilityName: 
   isAbility: 0
   isEnemy: 1
 --- !u!1 &1914868443
@@ -5511,6 +5627,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isChar: 0
+  characterInfo: {fileID: 0}
+  bossAI: {fileID: 0}
+  minion: {fileID: 0}
+  abilityName: 
   isAbility: 1
   isEnemy: 0
 --- !u!1 &1923662520
@@ -5644,6 +5764,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isChar: 0
+  characterInfo: {fileID: 0}
+  bossAI: {fileID: 0}
+  minion: {fileID: 0}
+  abilityName: 
   isAbility: 1
   isEnemy: 0
 --- !u!1 &1954602072

@@ -2,9 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CardGroup : MonoBehaviour
+public class Minion : Enemy
 {
-    public List<Card> cards;
     // Start is called before the first frame update
     void Start()
     {

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TurnSystem : MonoBehaviour
 {
-    bool isPlayerTurn;
+    public bool isPlayerTurn;
 
     public CharacterInfo currentCharacter;
     public Enemy currentEnemy;

@@ -6,6 +6,7 @@ using UnityEngine.TextCore.Text;
 
 public class Selecter : MonoBehaviour
 {
+    public Abilities abilities;
 
     public Animator animator;
 
@@ -20,8 +21,11 @@ public class Selecter : MonoBehaviour
 
     public UIManager manager;
 
-    //disfunction delete character card karl said so
-    CharacterCard selectedCharacter;
+
+    CharacterInfo selectedChar;
+    string selectedAbility;
+    Enemy target;
+
 
     //int charCount;
     //int abilityCount;
@@ -34,13 +38,18 @@ public class Selecter : MonoBehaviour
     Card selectedCard;
 
 
-    public Card[] cards;
+
+    public List<Card> cards;
+
+    bool mageUsed;
+    bool tankUsed;
+    bool rangeUsed;
 
     // Start is called before the first frame update
     void Start()
     {
         currentGroup = charGroup;
-        maxCount = currentGroup.cards.Length;
+        maxCount = currentGroup.cards.Count;
         cards = currentGroup.cards;
     }
 
@@ -65,6 +74,7 @@ public class Selecter : MonoBehaviour
         // Card Selected
         if (Input.GetKeyDown(KeyCode.Return))
         {
+           
             SelectCard();
             ChangeStage(selectStage + 1);
 
@@ -75,6 +85,36 @@ public class Selecter : MonoBehaviour
     void SelectCard()
     {
         selectedCard = cards[count]; // simply sets the card selected to be the current card we are at rn
+        if (selectStage == 1)
+        {
+            selectedChar = selectedCard.characterInfo;
+            if (selectedChar.isMage)
+            {
+                mageUsed = true;
+            }
+            else if (selectedChar.isTank)
+            {
+                tankUsed = true;
+            }
+            else if (selectedChar.isRange)
+            {
+                rangeUsed = true;
+            }
+            cards.Remove(selectedCard);
+            
+           
+        }
+        if(selectStage == 2)
+        {
+            selectedAbility = selectedCard.abilityName;
+        }
+        if( selectStage == 3)
+        {
+            if(selectedCard.bossAI == null)
+            {
+                target = selectedCard.minion;
+            }
+        }
         Debug.Log(selectedCard);
     }
 
@@ -88,23 +128,25 @@ public class Selecter : MonoBehaviour
             //select char
             currentGroup = charGroup;
 
-            abilityGroup.enabled = false;
-            enemyGroup.enabled = false;
-            maxCount = currentGroup.cards.Length;
+            charGroup.gameObject.SetActive(true);
+            abilityGroup.gameObject.SetActive(false);
+            enemyGroup.gameObject.SetActive(false);
+            maxCount = currentGroup.cards.Count;
             cards = currentGroup.cards;
         }
 
         else if (selectStage == 2)
         {
             //select abiilty
-            selectedCard = selectedCharacter;
-            Debug.Log(selectedCharacter);
+           
+            
 
-            abilityGroup = selectedCharacter.Character.abilityCards;
+            abilityGroup = selectedChar.abilityCards;
             currentGroup = abilityGroup;
-            charGroup.enabled = false;
-            enemyGroup.enabled = false;
-            maxCount = currentGroup.cards.Length;
+            abilityGroup.gameObject.SetActive(true);
+            charGroup.gameObject.SetActive(false);
+            enemyGroup.gameObject.SetActive(false);
+            maxCount = currentGroup.cards.Count;
             cards = currentGroup.cards;
             Debug.Log("Now selecting abilities.");
 
@@ -114,15 +156,27 @@ public class Selecter : MonoBehaviour
         {
             //select target
             currentGroup = enemyGroup;
-            abilityGroup.enabled = false;
-            charGroup.enabled = false;
-            maxCount = currentGroup.cards.Length;
+            enemyGroup.gameObject.SetActive(true);
+            abilityGroup.gameObject.SetActive(false);
+            charGroup.gameObject.SetActive(false) ;
+            maxCount = currentGroup.cards.Count;
             cards = currentGroup.cards;
             Debug.Log("Now selecting enemies.");
         }
         else
         {
-            Debug.LogError("wuh oh");
+            //do action
+            abilities.RunCharAbility(selectedAbility, target, selectedChar);
+            if (mageUsed && tankUsed && rangeUsed)
+            {
+                turnSystem.isPlayerTurn = false;
+            }
+            else
+            {
+                ChangeStage(1);
+            }
+           
+            
         }
         count = 0;
     }
