@@ -667,12 +667,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 192880686}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a4d57540ae6371d41996872261bf170a, type: 3}
+  m_Script: {fileID: 11500000, guid: 8a2ef314ce08533429bc58e50ce33193, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isChar: 1
   isAbility: 0
   isEnemy: 0
+  Character: {fileID: 1849694536}
 --- !u!1 &215199278
 GameObject:
   m_ObjectHideFlags: 0
@@ -3661,12 +3662,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1116352751}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a4d57540ae6371d41996872261bf170a, type: 3}
+  m_Script: {fileID: 11500000, guid: 8a2ef314ce08533429bc58e50ce33193, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isChar: 1
   isAbility: 0
   isEnemy: 0
+  Character: {fileID: 1577430232}
 --- !u!1 &1135307335
 GameObject:
   m_ObjectHideFlags: 0
@@ -3759,12 +3761,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1159484573}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a4d57540ae6371d41996872261bf170a, type: 3}
+  m_Script: {fileID: 11500000, guid: 8a2ef314ce08533429bc58e50ce33193, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isChar: 1
   isAbility: 0
   isEnemy: 0
+  Character: {fileID: 994662680}
 --- !u!1 &1162938544
 GameObject:
   m_ObjectHideFlags: 0
@@ -4215,9 +4218,8 @@ MonoBehaviour:
   selectStage: 1
   abilityGroup: {fileID: 0}
   charGroup: {fileID: 294084071}
-  enemyGroup: {fileID: 0}
+  enemyGroup: {fileID: 1715845088}
   currentGroup: {fileID: 0}
-  selectedChar: {fileID: 0}
   turnSystem: {fileID: 0}
   manager: {fileID: 0}
   cards: []

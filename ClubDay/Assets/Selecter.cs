@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.SceneManagement;
 using UnityEngine;
 using UnityEngine.TextCore.Text;
 
@@ -15,11 +16,12 @@ public class Selecter : MonoBehaviour
     public CardGroup enemyGroup;
     public CardGroup currentGroup;
 
-    public CharacterInfo selectedChar;
-
     public TurnSystem turnSystem;
 
     public UIManager manager;
+
+    //disfunction delete character card karl said so
+    CharacterCard selectedCharacter;
 
     //int charCount;
     //int abilityCount;
@@ -65,9 +67,8 @@ public class Selecter : MonoBehaviour
         {
             SelectCard();
             ChangeStage(selectStage + 1);
+
         }
-
-
     }
 
 
@@ -96,13 +97,18 @@ public class Selecter : MonoBehaviour
         else if (selectStage == 2)
         {
             //select abiilty
-            abilityGroup = selectedChar.abilityCards;
+            selectedCard = selectedCharacter;
+            Debug.Log(selectedCharacter);
+
+            abilityGroup = selectedCharacter.Character.abilityCards;
             currentGroup = abilityGroup;
             charGroup.enabled = false;
             enemyGroup.enabled = false;
             maxCount = currentGroup.cards.Length;
             cards = currentGroup.cards;
             Debug.Log("Now selecting abilities.");
+
+
         }
         else if (selectStage == 3)
         {
