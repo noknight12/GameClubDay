@@ -7,6 +7,7 @@ public class StatusObjects: MonoBehaviour
     int priority;
     int tick;
     string statusName;
+    StatusEffect statusEffect;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,13 +20,17 @@ public class StatusObjects: MonoBehaviour
         
     }
 
-    public StatusObjects(int priority, int tick, string statusName)
+    public StatusObjects(int priority, int tick, string statusName, StatusEffect statusEffect)
     {
         this.priority = priority;
         this.tick = tick;
         this.statusName = statusName;
+        this.statusEffect = statusEffect;
     }
+    public void RunStatusEffect(StatusEffect statusEffect)
+    {
 
+    }
 
 
 
