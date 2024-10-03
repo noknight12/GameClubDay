@@ -2,10 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyActionManager : MonoBehaviour
+public class StatusManager : MonoBehaviour
 {
-    Abilities abilities;
-
+    List<string> Statuses = new List<string>
+    {
+       
+    };
     // Start is called before the first frame update
     void Start()
     {
@@ -17,9 +19,5 @@ public class EnemyActionManager : MonoBehaviour
     {
         
     }
-
-    void EnemyAction(string abilityName, CharacterInfo target)
-    {
-        abilities.RunEnemyAbility(abilityName, target);
-    }
+    
 }

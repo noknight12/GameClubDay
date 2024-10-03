@@ -21,13 +21,13 @@ public class Abilities : MonoBehaviour
     {
 
     }
-    void RunEnemyAbility(string abilityName, CharacterInfo Enemy_target)
+    public void RunEnemyAbility(string abilityName, CharacterInfo Enemy_target)
     {
         this.Enemy_target = Enemy_target;
         Invoke(abilityName, 0.0f);
     }
 
-    void RunCharAbility(string abilityName, Enemy target) 
+    public void RunCharAbility(string abilityName, Enemy target) 
     {
         this.target = target;
         Invoke(abilityName, 0.0f);
