@@ -58,8 +58,14 @@ public class StatusEffect : MonoBehaviour
     {
 
     }
-    // 2. Stun - Stun effect applied on enemies by Tank's Bash and Ultimate; minions are stunned for 2 turns, boss for 1 turn.
+    // 2. Stun - Stun effect applied on enemies by Tank's Bash and Ultimate; minions are stunned for 2 turns
     void TankStun()
+    {
+
+    }
+
+    //boss for 1 turn.
+    void TankBossStun()
     {
 
     }
@@ -74,6 +80,7 @@ public class StatusEffect : MonoBehaviour
     {
 
     }
+  
 
     // Mage Statuses:
     // 1. Heal - Heals for 40% of the character’s HP.
@@ -86,17 +93,23 @@ public class StatusEffect : MonoBehaviour
     {
 
     }
-    // 3. Cold - Reduces attack and damage by 20% for 2 turns; freezes minions, causing them to skip a turn.
+    /* 3. Cold - Reduces attack and damage by 20% for 2 turns on the boss,
+      minions wuold just get frozen so irrelevent to them.*/
     void MageCold()
     {
 
     }
-    // 4. Frozen - Minions skip a turn due to this effect.
+    // 4. Frozen - Minions skip a turn due to this effect. ceoms from ice storm or wutever
     void MageFrozen()
     {
 
     }
-    // 5. Dispel - Removes dispellable status effects from heroes or enemies.
+    // also from the freeze spell that deals small amount of dot over 3 turns should be enough to deal 75% minion hp. applies to everyone
+    void MageAoeDOT()
+    {
+
+    }
+    // 5. Dispel - Removes dispellable status effects from heroes team or enemies team.
     void MageDispel()
     {
 
