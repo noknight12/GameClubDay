@@ -114,9 +114,18 @@ public class StatusEffect : MonoBehaviour
     {
 
     }
+    // 6. aoe dmg at the start of the turn. if cold/frozen double dmg to fireball
+    void MageFireball()
+    {
 
+    }
+    //burn status will do good amount of dot for 4 turns. Lower attack and defense 40% 
+    void MageBurn()
+    {
+
+    }
     // Boss Statuses:
-    // 1. Poison - Target loses 5% HP each turn for 2 turns.
+    // 1. Poison - Target loses 5% HP each turn for 3 turns.
     void BossPoison()
     {
 
@@ -131,7 +140,7 @@ public class StatusEffect : MonoBehaviour
     {
 
     }
-    // 4. Shock - Lowers defense for 3 turns.
+    // 4. Shock - Lowers defense for 3 turns. by 25 percwent 
     void BossShock()
     {
 
