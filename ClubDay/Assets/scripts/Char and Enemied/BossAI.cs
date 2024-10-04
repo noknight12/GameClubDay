@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class BossAI : Enemy
 {
@@ -29,8 +30,9 @@ public class BossAI : Enemy
         HP_Boss = HP; 
         Defence_Boss = Defence;
         AtkMulti_Boss = AtkMulti;
-        boss_summon = 4;
-        boss_ult = 5;
+        boss_summon = 5;
+        boss_ult = 7;
+
     }
     void Boss_Think()
     {
@@ -61,21 +63,21 @@ public class BossAI : Enemy
         {
             Attack("Summon");
         }
+        else if (boss_normal == 0)
+        {
+            Attack("Normal");
+        }
         else if (boss_shield == 0)
         {
             Attack("Shield");
-        }
-        else if (boss_blind == 0)
-        {
-            Attack("Blind");
         }
         else if (boss_heavy == 0)
         {
             Attack("Heavy");
         }
-        else if (boss_normal == 0)
+        else if (boss_blind == 0)
         {
-            Attack("Normal");
+            Attack("Blind");
         }
     }
     void Attack(String ability)
@@ -85,33 +87,34 @@ public class BossAI : Enemy
         switch (ability)
         {
             case "Ult":
+                //abilities.RunEnemyAbility(ability, selectedString)
                 Debug.Log("Using Ultamite");
-                boss_ult = 5;
+                boss_ult = 7;
                 break;
 
             case "Summon":
                 Debug.Log("Using Summon");
-                boss_summon = 4;
+                boss_summon = 5;
                 break;
 
             case "Shield":
                 Debug.Log("Using Shield");
-                boss_shield = 3;
+                boss_shield = 5;
                 break;
 
             case "Blind":
                 Debug.Log("Using Blind");
-                boss_blind = 3;
+                boss_blind = 4;
                 break;
 
             case "Heavy":
                 Debug.Log("Using Heavy");
-                boss_heavy = 2;
+                boss_heavy = 4;
                 break;
 
             case "Normal":
                 Debug.Log("Using Normal");
-                boss_normal = 1;
+                boss_normal = 3;
                 break;
 
             default:
@@ -123,11 +126,44 @@ public class BossAI : Enemy
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space))
+        if(Input.GetKeyDown(KeyCode.PageDown))
         {
             Boss_Think();
-            
+            turnSystem.numOfTurns++;
             
         }
+        if (currentTurn < turnSystem.numOfTurns)
+        {
+            if (boss_ult > 0)
+            {
+                boss_ult--;
+            }
+            if (boss_summon > 0)
+            {
+                boss_summon--;
+            }
+            if (boss_shield > 0)
+            {
+                boss_shield--;
+            }
+            if (boss_blind > 0)
+            {
+                boss_blind--;
+            }
+            if (boss_heavy > 0)
+            {
+                boss_heavy--;
+            }
+            if (boss_normal > 0)
+            {
+                boss_normal--;
+            }
+        }
+        currentTurn = turnSystem.numOfTurns;
+    }
+    void IncreaseScore()
+    {
+        turnSystem.numOfTurns++;
+        Debug.Log("Score increased to: " + turnSystem.numOfTurns);
     }
 }
