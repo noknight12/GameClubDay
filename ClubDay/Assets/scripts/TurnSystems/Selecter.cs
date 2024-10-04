@@ -26,7 +26,7 @@ public class Selecter : MonoBehaviour
 
     CharacterInfo selectedChar;
     string selectedAbility;
-    Enemy target;
+    public Enemy target;
 
 
     //int charCount;
