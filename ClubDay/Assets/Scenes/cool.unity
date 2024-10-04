@@ -482,7 +482,7 @@ MonoBehaviour:
   characterInfo: {fileID: 0}
   bossAI: {fileID: 0}
   minion: {fileID: 0}
-  abilityName: MageMist
+  abilityName: Mage_Mist_AOE
   isAbility: 1
   isEnemy: 0
 --- !u!1 &314029768
@@ -703,7 +703,7 @@ MonoBehaviour:
   characterInfo: {fileID: 0}
   bossAI: {fileID: 0}
   minion: {fileID: 0}
-  abilityName: Mage_Heavy
+  abilityName: Mage_heavy
   isAbility: 1
   isEnemy: 0
 --- !u!1 &379890679
@@ -840,7 +840,7 @@ MonoBehaviour:
   characterInfo: {fileID: 0}
   bossAI: {fileID: 0}
   minion: {fileID: 0}
-  abilityName: MageDispell
+  abilityName: Mage_Dispell_AOE
   isAbility: 1
   isEnemy: 0
 --- !u!1 &448917299
@@ -4880,7 +4880,7 @@ MonoBehaviour:
   characterInfo: {fileID: 0}
   bossAI: {fileID: 0}
   minion: {fileID: 0}
-  abilityName: 
+  abilityName: Mage_ULT
   isAbility: 1
   isEnemy: 0
 --- !u!1 &1721755008
