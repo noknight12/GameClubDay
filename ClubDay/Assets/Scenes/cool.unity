@@ -216,6 +216,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 108899792}
+  - component: {fileID: 108899793}
   m_Layer: 0
   m_Name: Boss
   m_TagString: Untagged
@@ -239,6 +240,39 @@ Transform:
   - {fileID: 1063692114}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &108899793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 108899791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb24640a34026994c9ac514b5c05766b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dmg_Taken: 0
+  HP: 0
+  Defence: 0
+  AtkMulti: 0
+  HP_Boss: 0
+  Defence_Boss: 0
+  AtkMulti_Boss: 0
+  randomString:
+  - Ranger
+  - Mage
+  - Tank
+  selectedString: 
+  abilities: {fileID: 0}
+  currentTurn: 0
+  turnSystem: {fileID: 625373428}
+  boss_normal: 0
+  boss_heavy: 0
+  boss_blind: 0
+  boss_shield: 0
+  boss_summon: 0
+  boss_ult: 0
 --- !u!1 &189557338
 GameObject:
   m_ObjectHideFlags: 0
