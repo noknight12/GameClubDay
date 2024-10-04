@@ -10,6 +10,8 @@ public class Tank : CharacterInfo
     public int mana_t;
     public int numberOfAbilities_t;
 
+ 
+
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +26,8 @@ public class Tank : CharacterInfo
     // Update is called once per frame
     void Update()
     {
-        
+       
     }
+
+    
 }
