@@ -37,11 +37,11 @@ public class Minion : Enemy
 
             if(heavyAttackCD <= 0)
             {
-                abilities.RunEnemyAbility("Minions_Normal", enemyTarget, this);
+                abilities.RunEnemyAbility("Minions_Heavy", enemyTarget, this);
             }
             else
             {
-
+                abilities.RunEnemyAbility("Minions_Normal", enemyTarget, this);
             }
 
         }
