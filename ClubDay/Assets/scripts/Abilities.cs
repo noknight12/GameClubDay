@@ -183,6 +183,7 @@ public class Abilities : MonoBehaviour
     //Boss Moves
     void Boss_Summon()
     {
+       
         //obviously status effect on the dead invisable minions that runs animation and sets hp to full for minions
       //  target.Dmg_TakenChar = Dmg_inflicted;
         Enemy_user = null;
@@ -190,6 +191,7 @@ public class Abilities : MonoBehaviour
     }
     void Boss_Normal()
     {
+        
         //applies "poison" status effect makes target lose 5 percent hp each turn for 2 turns 
         Dmg_inflicted = 50;
        // target.Dmg_TakenChar = Dmg_inflicted;
@@ -198,6 +200,7 @@ public class Abilities : MonoBehaviour
     }
     void Boss_Heavy()
     {
+        
         //inflicts "poisoin"
         //aoe applies status effect " Boss_heavy" on the side targets that deals 50 percent of dmg the dmg inflicted on orignial target
         Dmg_inflicted = 70; 
@@ -207,6 +210,7 @@ public class Abilities : MonoBehaviour
     }
     void Boss_ULT()
     {
+        
         //applies boss ult status effect that deals 50 percent of damage on the first turn and 50 percent as dot spred over 5 turns
         //inficts "shock" status effect which lowers defense by some percent for 3 turns
         Dmg_inflicted = 100; 
@@ -216,8 +220,16 @@ public class Abilities : MonoBehaviour
     }
     void Boss_Shield()
     {
+       
         //a shield status effects that needs 5 hits/instances of dmg to break 
-       // target.Dmg_TakenChar = Dmg_inflicted;
+        // target.Dmg_TakenChar = Dmg_inflicted;
+        Enemy_user = null;
+        Enemy_target = null;
+    }
+    void Boss_Blind()
+    {
+        
+        //Blinds units for 2 turns lowering accuracy of characters to 50%
         Enemy_user = null;
         Enemy_target = null;
     }

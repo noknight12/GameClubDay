@@ -1881,6 +1881,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayerTurn: 0
+  numOfTurns: 0
   currentCharacter: {fileID: 0}
   currentEnemy: {fileID: 0}
   selecter: {fileID: 1371109270}
@@ -3691,6 +3692,7 @@ MonoBehaviour:
   stamina: 0
   mana: 0
   numberOfAbilities: 0
+  isAlive: 0
   isMage: 0
   isTank: 0
   isRange: 0
@@ -4579,6 +4581,8 @@ MonoBehaviour:
   HP: 59
   Defence: 0
   AtkMulti: 0
+  abilities: {fileID: 0}
+  TurnSystem: {fileID: 0}
 --- !u!1 &1222802046
 GameObject:
   m_ObjectHideFlags: 0
@@ -5143,7 +5147,7 @@ MonoBehaviour:
   charGroup: {fileID: 294084071}
   enemyGroup: {fileID: 1715845088}
   currentGroup: {fileID: 0}
-  turnSystem: {fileID: 0}
+  turnSystem: {fileID: 625373428}
   manager: {fileID: 0}
   cards: []
 --- !u!4 &1371109271
@@ -5294,6 +5298,8 @@ MonoBehaviour:
   HP: 36
   Defence: 0
   AtkMulti: 0
+  abilities: {fileID: 0}
+  TurnSystem: {fileID: 0}
 --- !u!1 &1435550163
 GameObject:
   m_ObjectHideFlags: 0
@@ -5986,6 +5992,7 @@ MonoBehaviour:
   stamina: 0
   mana: 0
   numberOfAbilities: 0
+  isAlive: 0
   isMage: 0
   isTank: 0
   isRange: 0
@@ -7164,6 +7171,7 @@ MonoBehaviour:
   stamina: 0
   mana: 0
   numberOfAbilities: 0
+  isAlive: 0
   isMage: 0
   isTank: 0
   isRange: 0

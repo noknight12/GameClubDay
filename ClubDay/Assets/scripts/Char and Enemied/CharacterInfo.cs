@@ -10,6 +10,7 @@ public class CharacterInfo : MonoBehaviour
     public int mana;
     public int numberOfAbilities;
 
+    public bool isAlive;
 
     public bool isMage;
     public bool isTank;
