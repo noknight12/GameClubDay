@@ -1026,7 +1026,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &499926694
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2541,9 +2541,9 @@ MonoBehaviour:
   isMage: 0
   isTank: 0
   isRange: 0
-  CardGroup: {fileID: 0}
-  characterCard: {fileID: 0}
-  abilityCards: {fileID: 0}
+  CardGroup: {fileID: 1054083660}
+  characterCard: {fileID: 1054083658}
+  abilityCards: {fileID: 1784420761}
 --- !u!1 &1019331000
 GameObject:
   m_ObjectHideFlags: 0
@@ -2640,6 +2640,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CharCardGroup
       objectReference: {fileID: 0}
+    - target: {fileID: 2191920643510162211, guid: 8f59e096a9ac783428b995b98ed86479, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5890756847520772300, guid: 8f59e096a9ac783428b995b98ed86479, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7.71
@@ -2685,6 +2689,50 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f59e096a9ac783428b995b98ed86479, type: 3}
+--- !u!114 &1054083657 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2014029230688345973, guid: 8f59e096a9ac783428b995b98ed86479, type: 3}
+  m_PrefabInstance: {fileID: 1054083656}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4d57540ae6371d41996872261bf170a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1054083658 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9105470583088952866, guid: 8f59e096a9ac783428b995b98ed86479, type: 3}
+  m_PrefabInstance: {fileID: 1054083656}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4d57540ae6371d41996872261bf170a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1054083659 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8126411706553260244, guid: 8f59e096a9ac783428b995b98ed86479, type: 3}
+  m_PrefabInstance: {fileID: 1054083656}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4d57540ae6371d41996872261bf170a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1054083660 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3360322331369885799, guid: 8f59e096a9ac783428b995b98ed86479, type: 3}
+  m_PrefabInstance: {fileID: 1054083656}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5831ba0533595794895d67f8054dfe9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1061148645
 GameObject:
   m_ObjectHideFlags: 0
@@ -4352,8 +4400,8 @@ MonoBehaviour:
   isMage: 0
   isTank: 0
   isRange: 0
-  CardGroup: {fileID: 0}
-  characterCard: {fileID: 0}
+  CardGroup: {fileID: 1054083660}
+  characterCard: {fileID: 1054083657}
   abilityCards: {fileID: 499926694}
 --- !u!114 &1577430233
 MonoBehaviour:
@@ -5047,6 +5095,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TankAbilityCardGroup
       objectReference: {fileID: 0}
+    - target: {fileID: 2406265300582374669, guid: c7503ceaaa0dbfd49acbe819e1743215, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3348557524995786153, guid: c7503ceaaa0dbfd49acbe819e1743215, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7.71
@@ -5092,6 +5144,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7503ceaaa0dbfd49acbe819e1743215, type: 3}
+--- !u!114 &1784420761 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6636621244793719463, guid: c7503ceaaa0dbfd49acbe819e1743215, type: 3}
+  m_PrefabInstance: {fileID: 1784420760}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5831ba0533595794895d67f8054dfe9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1794608535
 GameObject:
   m_ObjectHideFlags: 0
@@ -5315,8 +5378,8 @@ MonoBehaviour:
   isMage: 0
   isTank: 0
   isRange: 0
-  CardGroup: {fileID: 0}
-  characterCard: {fileID: 0}
+  CardGroup: {fileID: 1054083660}
+  characterCard: {fileID: 1054083659}
   abilityCards: {fileID: 681458275}
 --- !u!114 &1849694537
 MonoBehaviour:
@@ -5573,6 +5636,10 @@ PrefabInstance:
     - target: {fileID: 4858061263776916407, guid: 250cdcdb520ea2f44a1ce74552a402e7, type: 3}
       propertyPath: m_Name
       value: EnemyCardGruop
+      objectReference: {fileID: 0}
+    - target: {fileID: 4858061263776916407, guid: 250cdcdb520ea2f44a1ce74552a402e7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
