@@ -166,7 +166,7 @@ public class Selecter : MonoBehaviour
         else
         {
             //do action
-            abilities.RunCharAbility(selectedAbility, target, selectedChar);
+          //  abilities.RunCharAbility(selectedAbility, target, selectedChar);
             if (mageUsed && tankUsed && rangeUsed)
             {
                 turnSystem.isPlayerTurn = false;
