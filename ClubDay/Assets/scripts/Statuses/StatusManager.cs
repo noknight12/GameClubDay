@@ -7,7 +7,7 @@ public class StatusManager : MonoBehaviour
 
     public GameObject[] effectSprites;
     public Transform effectPosition;
-    List<StatusObjects> Statuses;
+    public List<StatusObjects> Statuses;
  
     // Start is called before the first frame update
     void Start()

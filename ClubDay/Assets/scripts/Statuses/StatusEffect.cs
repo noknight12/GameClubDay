@@ -48,6 +48,7 @@ public class StatusEffect : MonoBehaviour
     {
         
     }
+
     void RangerDoubleAttack()
     {
 
