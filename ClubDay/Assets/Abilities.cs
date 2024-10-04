@@ -151,7 +151,7 @@ public class Abilities : MonoBehaviour
         target = null;
     }
 
-    void Mage_Dispeal_AOE()
+    void Mage_Dispell_AOE()
     {
         //Casts a status effect, that checks if the statuses of the heros or enemies are dispealable, and then executes.
         target.Dmg_Taken = Dmg_inflicted;

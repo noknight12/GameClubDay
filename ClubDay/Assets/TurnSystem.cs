@@ -5,13 +5,12 @@ using UnityEngine;
 public class TurnSystem : MonoBehaviour
 {
     public bool isPlayerTurn;
+    int numOfTurns = 0; //every enemy turn is +1 turn
 
     public CharacterInfo currentCharacter;
     public Enemy currentEnemy;
 
-    bool isRangerAvaiable = true;
-    bool isKnightAvaiable = true;
-    bool isWizardAvaiable = true;
+    public Selecter selecter;
 
 
 
@@ -25,25 +24,23 @@ public class TurnSystem : MonoBehaviour
     {
         isPlayerTurn = true;
        
-
-        isWizardAvaiable = true;
-        isKnightAvaiable = true;
-        isWizardAvaiable = true;
+       
+      
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (!isPlayerTurn)
+        {
+            selecter.enabled = false;
+        }
     }
 
     public void Check()
     {
-        if(!isRangerAvaiable &&  !isKnightAvaiable && !isWizardAvaiable) 
-        {
-            ChangeTurn();
-        }
+
     }
 
     void ChangeTurn()
