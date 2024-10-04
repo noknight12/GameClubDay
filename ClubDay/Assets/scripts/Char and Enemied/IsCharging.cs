@@ -21,4 +21,10 @@ public class IsCharging : MonoBehaviour
     {
         
     }
+
+    public IsCharging(bool isCharging, int chargeDuratino)
+    {
+        this.isCharging = isCharging;
+        this.chargeDuration = chargeDuration;
+    }
 }
