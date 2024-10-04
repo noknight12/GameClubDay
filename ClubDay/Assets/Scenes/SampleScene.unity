@@ -493,6 +493,62 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &489626180
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 489626182}
+  - component: {fileID: 489626181}
+  m_Layer: 0
+  m_Name: test
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &489626181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 489626180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb24640a34026994c9ac514b5c05766b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dmg_Taken: 0
+  HP: 0
+  Defence: 0
+  AtkMulti: 0
+  HP_Boss: 0
+  Defence_Boss: 0
+  AtkMulti_Boss: 0
+  randomString:
+  - Mage
+  - Ranger
+  - Tank
+  selectedString: 
+--- !u!4 &489626182
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 489626180}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.017314732, y: -1.5714755, z: 0.038789794}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &874188886
 GameObject:
   m_ObjectHideFlags: 0
@@ -913,3 +969,4 @@ SceneRoots:
   - {fileID: 874188887}
   - {fileID: 1084252433}
   - {fileID: 274951111}
+  - {fileID: 489626182}

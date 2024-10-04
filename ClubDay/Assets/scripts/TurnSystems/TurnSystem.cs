@@ -5,7 +5,7 @@ using UnityEngine;
 public class TurnSystem : MonoBehaviour
 {
     public bool isPlayerTurn;
-    int numOfTurns = 0; //every enemy turn is +1 turn
+    public int numOfTurns = 0; //every enemy turn is +1 turn
 
     public CharacterInfo currentCharacter;
     public Enemy currentEnemy;
