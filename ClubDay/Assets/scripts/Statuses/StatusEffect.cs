@@ -43,13 +43,16 @@ public class StatusEffect : MonoBehaviour
 
     // Ranger Statuses:
     // 1. Charge - Ranger's Charge move, treated as a 1-turn status effect.
-    // 2. Double Attack - Ranger's Ultimate doubles attack for 2 turns.
     void RangerCharge()
     {
         
     }
 
-    void RangerDoubleAttack()
+    void RangerUlt()
+    {
+
+    }
+    void RangerAOE()
     {
 
     }
@@ -148,6 +151,12 @@ public class StatusEffect : MonoBehaviour
     }
     // 5. Boss Shield - Needs 5 hits/instances of damage to break.
     void BossShield()
+    {
+
+    }
+
+    // 5. blind for 2 turns lowers accuracy to 50 percetn 
+    void BossBlind()
     {
 
     }
