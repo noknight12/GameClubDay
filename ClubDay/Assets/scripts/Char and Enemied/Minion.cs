@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Minion : Enemy
 {
+    //everyturn attack normal and heavy every 2 turns
     // Start is called before the first frame update
     void Start()
     {
