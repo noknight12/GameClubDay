@@ -4,6 +4,12 @@ using UnityEngine;
 
 public class IsCharging : MonoBehaviour
 {
+
+
+    bool isCharging;
+    int chargeDuration;
+    public Selecter selecter;
+
     // Start is called before the first frame update
     void Start()
     {

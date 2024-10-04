@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class StatusManager : MonoBehaviour
 {
-    List<string> Statuses = new List<string>
-    {
-       
-    };
+
+    public GameObject[] effectSprites;
+    public Transform effectPosition;
+    List<StatusObjects> Statuses;
+ 
     // Start is called before the first frame update
     void Start()
     {
