@@ -6,6 +6,17 @@ public class StatusEffect : MonoBehaviour
 {
     public Enemy enemy;
     public CharacterInfo characterInfo;
+    int Dmg_inflicted = 0;
+
+    CharacterInfo user;
+    Enemy target;
+    Enemy Enemy_user;
+    CharacterInfo Enemy_target;
+    public StatusEffect statusEffect;
+    public StatusManager statusManager;
+    public StatusObjects statusObjects;
+    public IsCharging IsCharging;
+    private System.Random random = new System.Random();
 
     //it shouldnt be an intereger
 
@@ -24,10 +35,7 @@ public class StatusEffect : MonoBehaviour
 
     }
     
-    void statusManager(int targetchars)
-    {
-        
-    }
+
     
     void CharacterStatusRunner(string statusName, Enemy enemy)
     {
@@ -45,7 +53,7 @@ public class StatusEffect : MonoBehaviour
     // 1. Charge - Ranger's Charge move, treated as a 1-turn status effect.
     void RangerCharge()
     {
-        
+        Enemy_target.atkMultiplier = 2;
     }
 
     void RangerUlt()

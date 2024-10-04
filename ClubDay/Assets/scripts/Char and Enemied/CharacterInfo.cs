@@ -19,6 +19,8 @@ public class CharacterInfo : MonoBehaviour
     public CardGroup CardGroup;
     public Card characterCard;
     public CardGroup abilityCards;
+
+    public float atkMultiplier;
    
     // Start is called before the first frame update
     void Start()
