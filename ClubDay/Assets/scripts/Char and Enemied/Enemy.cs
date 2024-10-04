@@ -7,6 +7,7 @@ public class Enemy : MonoBehaviour
     string statusEffect;
     public int Dmg_Taken;
     public int HP;
+
     public int Defence;
     public int AtkMulti;
     // Start is called before the first frame update
@@ -23,7 +24,7 @@ public class Enemy : MonoBehaviour
 
     public void TakeHit()
     {
-
+        HP -= Dmg_Taken;
     }
   
 }

@@ -950,7 +950,7 @@ MonoBehaviour:
   characterInfo: {fileID: 0}
   bossAI: {fileID: 0}
   minion: {fileID: 0}
-  abilityName: 
+  abilityName: MageMist
   isAbility: 1
   isEnemy: 0
 --- !u!1 &324593950
@@ -1087,7 +1087,7 @@ MonoBehaviour:
   characterInfo: {fileID: 0}
   bossAI: {fileID: 0}
   minion: {fileID: 0}
-  abilityName: 
+  abilityName: Mage_Heavy
   isAbility: 1
   isEnemy: 0
 --- !u!1 &373282940
@@ -1361,7 +1361,7 @@ MonoBehaviour:
   characterInfo: {fileID: 0}
   bossAI: {fileID: 0}
   minion: {fileID: 0}
-  abilityName: 
+  abilityName: MageDispell
   isAbility: 1
   isEnemy: 0
 --- !u!1 &448917299
@@ -1632,7 +1632,7 @@ MonoBehaviour:
   characterInfo: {fileID: 0}
   bossAI: {fileID: 0}
   minion: {fileID: 0}
-  abilityName: 
+  abilityName: Mage_Heal
   isAbility: 1
   isEnemy: 0
 --- !u!1 &568662887
@@ -1687,6 +1687,54 @@ MonoBehaviour:
   abilityName: 
   isAbility: 1
   isEnemy: 0
+--- !u!1 &625373427
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 625373429}
+  - component: {fileID: 625373428}
+  m_Layer: 0
+  m_Name: GameObject (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &625373428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 625373427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6afde16a721f8214b88eb24e636c44ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isPlayerTurn: 0
+  currentCharacter: {fileID: 0}
+  currentEnemy: {fileID: 0}
+  selecter: {fileID: 1371109270}
+--- !u!4 &625373429
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 625373427}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.63197005, y: -0.4054083, z: 0.09151881}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &645446384
 GameObject:
   m_ObjectHideFlags: 0
@@ -2515,7 +2563,7 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
-  orthographic: 1
+  orthographic: 0
   orthographic size: 5
   m_Depth: -1
   m_CullingMask:
@@ -3198,6 +3246,9 @@ MonoBehaviour:
   stamina: 0
   mana: 0
   numberOfAbilities: 0
+  isMage: 0
+  isTank: 0
+  isRange: 0
   CardGroup: {fileID: 294084071}
   characterCard: {fileID: 0}
   abilityCards: {fileID: 1711898897}
@@ -4300,6 +4351,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34675165872e2144d93e9b52107f689d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  abilities: {fileID: 0}
   animator: {fileID: 0}
   selectStage: 1
   abilityGroup: {fileID: 0}
@@ -4812,6 +4864,9 @@ MonoBehaviour:
   stamina: 0
   mana: 0
   numberOfAbilities: 0
+  isMage: 0
+  isTank: 0
+  isRange: 0
   CardGroup: {fileID: 294084071}
   characterCard: {fileID: 0}
   abilityCards: {fileID: 499926694}
@@ -5440,6 +5495,9 @@ MonoBehaviour:
   stamina: 0
   mana: 0
   numberOfAbilities: 0
+  isMage: 0
+  isTank: 0
+  isRange: 0
   CardGroup: {fileID: 294084071}
   characterCard: {fileID: 0}
   abilityCards: {fileID: 681458275}
@@ -5630,7 +5688,7 @@ MonoBehaviour:
   characterInfo: {fileID: 0}
   bossAI: {fileID: 0}
   minion: {fileID: 0}
-  abilityName: 
+  abilityName: Mage_Normal
   isAbility: 1
   isEnemy: 0
 --- !u!1 &1923662520
@@ -5880,7 +5938,7 @@ Transform:
   m_GameObject: {fileID: 1974801057}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -0.4}
   m_LocalScale: {x: 3, y: 4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6207,3 +6265,4 @@ SceneRoots:
   - {fileID: 1172637937}
   - {fileID: 1429777746}
   - {fileID: 1371109271}
+  - {fileID: 625373429}
