@@ -6,6 +6,8 @@ using UnityEngine.TextCore.Text;
 
 public class Selecter : MonoBehaviour
 {
+    
+
     public Abilities abilities;
 
     public Animator animator;
@@ -56,27 +58,31 @@ public class Selecter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //arrow keys through the cards
-        if (Input.GetKeyDown(KeyCode.RightArrow) && count < maxCount - 1 && count >= 0)
+        if (turnSystem.isPlayerTurn)
         {
+            //arrow keys through the cards
+            if (Input.GetKeyDown(KeyCode.RightArrow) && count < maxCount - 1 && count >= 0)
+            {
 
-            count++;
-            Debug.Log(count);
+                count++;
+                Debug.Log(count);
 
-        }
-        else if (Input.GetKeyDown(KeyCode.LeftArrow) && count < maxCount && count > 0)
-        {
-            count--;
-            Debug.Log(count);
-        }
+            }
+            else if (Input.GetKeyDown(KeyCode.LeftArrow) && count < maxCount && count > 0)
+            {
+                count--;
+                Debug.Log(count);
+            }
 
 
-        // Card Selected
-        if (Input.GetKeyDown(KeyCode.Return))
-        {
-           
-            SelectCard();
-            ChangeStage(selectStage + 1);
+            // Card Selected
+            if (Input.GetKeyDown(KeyCode.Return))
+            {
+
+                SelectCard();
+                ChangeStage(selectStage + 1);
+
+            }
 
         }
     }
@@ -166,7 +172,7 @@ public class Selecter : MonoBehaviour
         else
         {
             //do action
-            abilities.RunCharAbility(selectedAbility, target, selectedChar);
+          //  abilities.RunCharAbility(selectedAbility, target, selectedChar);
             if (mageUsed && tankUsed && rangeUsed)
             {
                 turnSystem.isPlayerTurn = false;
