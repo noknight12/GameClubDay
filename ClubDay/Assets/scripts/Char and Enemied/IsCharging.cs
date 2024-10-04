@@ -9,7 +9,8 @@ public class IsCharging : MonoBehaviour
     bool isCharging;
     int chargeDuration;
     public Selecter selecter;
-
+    public TurnSystem turnSystem;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +20,12 @@ public class IsCharging : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
+        if (TurnSystem.numOfTurns > currentTurn)
+        {
+            heavyAttackCD--;
+
+        }
     }
 
     public IsCharging(bool isCharging, int chargeDuratino)
