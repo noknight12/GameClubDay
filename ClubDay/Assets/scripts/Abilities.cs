@@ -72,7 +72,9 @@ public class Abilities : MonoBehaviour
     //fix ranger charge
     void Range_Charge()
     {
-        //ranger charage is treated like a 1 move status efect so next turn it would run the code to run the animation and etc
+        statusManager.Statuses.Add(new StatusObjects(5, 0, "RangeCharge", statusEffect, false));
+        IsCharging = new IsCharging(true, 1); // Assuming 2 is the duration for charging
+       //ranger charage is treated like a 1 move status efect so next turn it would run the code to run the animation and etc
 
         target.Dmg_Taken = Dmg_inflicted;
         user = null;
@@ -80,7 +82,7 @@ public class Abilities : MonoBehaviour
     }
     void Range_ULT()
     {
-        statusManager.Statuses.Add(new StatusObjects(5, 3, "RangerUlt", statusEffect, false));
+        statusManager.Statuses.Add(new StatusObjects(3, 3, "RangerUlt", statusEffect, false));
         //doubles his attack, can treat it like a stutus for simplicity sake
         //aoe atack on all targets same dmg
         Dmg_inflicted = 20;
@@ -100,7 +102,7 @@ public class Abilities : MonoBehaviour
     }
     void Tank_Block()
     {
-        statusManager.Statuses.Add( new StatusObjects (5, 3, "TankBlock", statusEffect , false ));
+        statusManager.Statuses.Add( new StatusObjects (4, 3, "TankBlock", statusEffect , false ));
         //blocks for a character for that turn, treat as a status effect.
         user = null;
         target = null;
@@ -129,7 +131,7 @@ public class Abilities : MonoBehaviour
     void Tank_Reflect()
     {
         //requires use of aggro, followed by block to unlock this move. 
-        statusManager.Statuses.Add(new StatusObjects(5, 1, "TankReflect", statusEffect, false));
+        statusManager.Statuses.Add(new StatusObjects(3, 1, "TankReflect", statusEffect, false));
         Dmg_inflicted = 20;
         target.Dmg_Taken = Dmg_inflicted;
         user = null;
@@ -138,8 +140,8 @@ public class Abilities : MonoBehaviour
     //is also kinda werid
     void Tank_Ult()
     {
-        statusManager.Statuses.Add(new StatusObjects(5, 2, "TankStun", statusEffect, false));
-        statusManager.Statuses.Add(new StatusObjects(5, 1, "TankBossStun", statusEffect, false));
+        statusManager.Statuses.Add(new StatusObjects(4, 2, "TankStun", statusEffect, false));
+        statusManager.Statuses.Add(new StatusObjects(4, 1, "TankBossStun", statusEffect, false));
         // Big shield bash minions stunned for 2 turn, boss for 1 turn (AOE), treat stun like status effect
         Dmg_inflicted = 60;
         target.Dmg_Taken = Dmg_inflicted;
@@ -187,9 +189,9 @@ public class Abilities : MonoBehaviour
         /* Deal small amount of damage over a time to enemies and lowers attack
           and dmg from enemies by 20 percent (2 turns) called "cold status effect"*/
         // on the minions will skip a turn with the "frozen" status
-        statusManager.Statuses.Add(new StatusObjects(3, 3, "MageAoeDOT", statusEffect, false));
-        statusManager.Statuses.Add(new StatusObjects(5, 1, "MageFrozen", statusEffect, false));
-        statusManager.Statuses.Add(new StatusObjects(5, 2, "MageCold", statusEffect, false));
+        statusManager.Statuses.Add(new StatusObjects(1, 3, "MageAoeDOT", statusEffect, false));
+        statusManager.Statuses.Add(new StatusObjects(2, 1, "MageFrozen", statusEffect, false));
+        statusManager.Statuses.Add(new StatusObjects(1, 2, "MageCold", statusEffect, false));
         target.Dmg_Taken = Dmg_inflicted;
         user = null;
         target = null;
@@ -198,7 +200,7 @@ public class Abilities : MonoBehaviour
     void Mage_ULT()
     {
         statusManager.Statuses.Add(new StatusObjects(5, 0, "MageFireball", statusEffect, false));
-        statusManager.Statuses.Add(new StatusObjects(5, 4, "MageBurn", statusEffect, false));
+        statusManager.Statuses.Add(new StatusObjects(1, 4, "MageBurn", statusEffect, false));
 
         Dmg_inflicted = 200;
         target.Dmg_Taken = Dmg_inflicted;
@@ -219,7 +221,7 @@ public class Abilities : MonoBehaviour
     }
     void Boss_Normal()
     {
-        statusManager.Statuses.Add(new StatusObjects(4, 3, "BossPoison", statusEffect, true));
+        statusManager.Statuses.Add(new StatusObjects(1, 3, "BossPoison", statusEffect, true));
         //applies "poison" status effect makes target lose 5 percent hp each turn for 2 turns 
         Dmg_inflicted = 50;
        // target.Dmg_TakenChar = Dmg_inflicted;
@@ -228,7 +230,7 @@ public class Abilities : MonoBehaviour
     }
     void Boss_Heavy()
     {
-        statusManager.Statuses.Add(new StatusObjects(4, 3, "BossPoison", statusEffect, true));
+        statusManager.Statuses.Add(new StatusObjects(1, 3, "BossPoison", statusEffect, true));
         statusManager.Statuses.Add(new StatusObjects(5, 0, "BossHeavy", statusEffect, false));
 
         //inflicts "poisoin"
@@ -240,7 +242,8 @@ public class Abilities : MonoBehaviour
     }
     void Boss_ULT()
     {
-        statusManager.Statuses.Add(new StatusObjects(3, 5, "BossPoison", statusEffect, false));
+        IsCharging = new IsCharging(true, 5); // Assuming 2 is the duration for charging
+        statusManager.Statuses.Add(new StatusObjects(1, 5, "BossPoison", statusEffect, false));
 
 
         //applies boss ult status effect that deals 50 percent of damage on the first turn and 50 percent as dot spred over 5 turns
@@ -276,7 +279,7 @@ public class Abilities : MonoBehaviour
     }
     void Minons_Heavy()
     {
-        statusManager.Statuses.Add(new StatusObjects(3, 0, "MinionsHeavyAttackCharge", statusEffect, false));
+        statusManager.Statuses.Add(new StatusObjects(5, 0, "MinionsHeavyAttackCharge", statusEffect, false));
         //normal but 1.75 dmg of regular normal attack
         //only actives if the minion has used 2 normal attacks prior 
         // target.Dmg_TakenChar = Dmg_inflicted;
