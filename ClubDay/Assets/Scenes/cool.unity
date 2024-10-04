@@ -323,7 +323,7 @@ MonoBehaviour:
   characterInfo: {fileID: 0}
   bossAI: {fileID: 0}
   minion: {fileID: 0}
-  abilityName: 
+  abilityName: Range_Heavy
   isAbility: 1
   isEnemy: 0
 --- !u!1 &232225219
@@ -482,7 +482,7 @@ MonoBehaviour:
   characterInfo: {fileID: 0}
   bossAI: {fileID: 0}
   minion: {fileID: 0}
-  abilityName: MageMist
+  abilityName: Mage_Mist_AOE
   isAbility: 1
   isEnemy: 0
 --- !u!1 &314029768
@@ -703,7 +703,7 @@ MonoBehaviour:
   characterInfo: {fileID: 0}
   bossAI: {fileID: 0}
   minion: {fileID: 0}
-  abilityName: Mage_Heavy
+  abilityName: Mage_heavy
   isAbility: 1
   isEnemy: 0
 --- !u!1 &379890679
@@ -840,7 +840,7 @@ MonoBehaviour:
   characterInfo: {fileID: 0}
   bossAI: {fileID: 0}
   minion: {fileID: 0}
-  abilityName: MageDispell
+  abilityName: Mage_Dispell_AOE
   isAbility: 1
   isEnemy: 0
 --- !u!1 &448917299
@@ -1579,7 +1579,7 @@ MonoBehaviour:
   characterInfo: {fileID: 0}
   bossAI: {fileID: 0}
   minion: {fileID: 0}
-  abilityName: 
+  abilityName: Range_ULT
   isAbility: 1
   isEnemy: 0
 --- !u!1 &728900926
@@ -1822,7 +1822,7 @@ MonoBehaviour:
   characterInfo: {fileID: 0}
   bossAI: {fileID: 0}
   minion: {fileID: 0}
-  abilityName: 
+  abilityName: Range_AOE
   isAbility: 1
   isEnemy: 0
 --- !u!1 &811862807
@@ -1906,7 +1906,7 @@ MonoBehaviour:
   characterInfo: {fileID: 0}
   bossAI: {fileID: 0}
   minion: {fileID: 0}
-  abilityName: 
+  abilityName: Range_Normal
   isAbility: 1
   isEnemy: 0
 --- !u!1 &822544630
@@ -4964,7 +4964,7 @@ MonoBehaviour:
   characterInfo: {fileID: 0}
   bossAI: {fileID: 0}
   minion: {fileID: 0}
-  abilityName: 
+  abilityName: Mage_ULT
   isAbility: 1
   isEnemy: 0
 --- !u!1 &1721755008
@@ -5723,7 +5723,7 @@ MonoBehaviour:
   characterInfo: {fileID: 0}
   bossAI: {fileID: 0}
   minion: {fileID: 0}
-  abilityName: 
+  abilityName: Range_Charge
   isAbility: 1
   isEnemy: 0
 --- !u!1 &1949052009
