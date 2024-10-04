@@ -11,6 +11,7 @@ public class Minion : Enemy
     int currentTurn = 0;
     public Abilities abilities;
     public CardGroup charGroup;
+    CharacterInfo enemyTarget;
 
     bool doneTurn;
 
@@ -25,6 +26,7 @@ public class Minion : Enemy
     {
         if (TurnSystem.isPlayerTurn)
         {
+            ChooseTarget();
 
 
             if (TurnSystem.numOfTurns > currentTurn)
@@ -35,7 +37,7 @@ public class Minion : Enemy
 
             if(heavyAttackCD <= 0)
             {
-
+                abilities.RunEnemyAbility("Minions_Normal", enemyTarget, this);
             }
             else
             {
@@ -48,7 +50,7 @@ public class Minion : Enemy
     void ChooseTarget()
     {
         int target = Random.Range(0, 2);
-        CharacterInfo enemyTarget = charGroup.cards[target].characterInfo;
+       enemyTarget = charGroup.cards[target].characterInfo;
     }
 }
 
