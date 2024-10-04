@@ -216,6 +216,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 108899792}
+  - component: {fileID: 108899793}
   m_Layer: 0
   m_Name: Boss
   m_TagString: Untagged
@@ -239,6 +240,39 @@ Transform:
   - {fileID: 1063692114}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &108899793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 108899791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb24640a34026994c9ac514b5c05766b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dmg_Taken: 0
+  HP: 0
+  Defence: 0
+  AtkMulti: 0
+  HP_Boss: 0
+  Defence_Boss: 0
+  AtkMulti_Boss: 0
+  randomString:
+  - Ranger
+  - Mage
+  - Tank
+  selectedString: 
+  abilities: {fileID: 0}
+  currentTurn: 0
+  turnSystem: {fileID: 625373428}
+  boss_normal: 0
+  boss_heavy: 0
+  boss_blind: 0
+  boss_shield: 0
+  boss_summon: 0
+  boss_ult: 0
 --- !u!1 &189557338
 GameObject:
   m_ObjectHideFlags: 0
@@ -1026,7 +1060,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &499926694
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2541,9 +2575,9 @@ MonoBehaviour:
   isMage: 0
   isTank: 0
   isRange: 0
-  CardGroup: {fileID: 0}
-  characterCard: {fileID: 0}
-  abilityCards: {fileID: 0}
+  CardGroup: {fileID: 1054083660}
+  characterCard: {fileID: 1054083658}
+  abilityCards: {fileID: 1784420761}
 --- !u!1 &1019331000
 GameObject:
   m_ObjectHideFlags: 0
@@ -2642,7 +2676,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2191920643510162211, guid: 8f59e096a9ac783428b995b98ed86479, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5890756847520772300, guid: 8f59e096a9ac783428b995b98ed86479, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2689,6 +2723,50 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f59e096a9ac783428b995b98ed86479, type: 3}
+--- !u!114 &1054083657 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2014029230688345973, guid: 8f59e096a9ac783428b995b98ed86479, type: 3}
+  m_PrefabInstance: {fileID: 1054083656}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4d57540ae6371d41996872261bf170a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1054083658 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9105470583088952866, guid: 8f59e096a9ac783428b995b98ed86479, type: 3}
+  m_PrefabInstance: {fileID: 1054083656}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4d57540ae6371d41996872261bf170a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1054083659 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8126411706553260244, guid: 8f59e096a9ac783428b995b98ed86479, type: 3}
+  m_PrefabInstance: {fileID: 1054083656}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4d57540ae6371d41996872261bf170a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1054083660 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3360322331369885799, guid: 8f59e096a9ac783428b995b98ed86479, type: 3}
+  m_PrefabInstance: {fileID: 1054083656}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5831ba0533595794895d67f8054dfe9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1061148645
 GameObject:
   m_ObjectHideFlags: 0
@@ -3565,7 +3643,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1375824170}
   - component: {fileID: 1375824171}
-  - component: {fileID: 1375824172}
   m_Layer: 0
   m_Name: MageGurl
   m_TagString: Untagged
@@ -3640,27 +3717,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &1375824172
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1375824169}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 77d1dcbfaa95589499f8666d9786ca21, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1429777745
 GameObject:
   m_ObjectHideFlags: 0
@@ -4378,8 +4434,8 @@ MonoBehaviour:
   isMage: 0
   isTank: 0
   isRange: 0
-  CardGroup: {fileID: 0}
-  characterCard: {fileID: 0}
+  CardGroup: {fileID: 1054083660}
+  characterCard: {fileID: 1054083657}
   abilityCards: {fileID: 499926694}
 --- !u!114 &1577430233
 MonoBehaviour:
@@ -5073,6 +5129,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TankAbilityCardGroup
       objectReference: {fileID: 0}
+    - target: {fileID: 2406265300582374669, guid: c7503ceaaa0dbfd49acbe819e1743215, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3348557524995786153, guid: c7503ceaaa0dbfd49acbe819e1743215, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7.71
@@ -5118,6 +5178,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7503ceaaa0dbfd49acbe819e1743215, type: 3}
+--- !u!114 &1784420761 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6636621244793719463, guid: c7503ceaaa0dbfd49acbe819e1743215, type: 3}
+  m_PrefabInstance: {fileID: 1784420760}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5831ba0533595794895d67f8054dfe9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1794608535
 GameObject:
   m_ObjectHideFlags: 0
@@ -5341,8 +5412,8 @@ MonoBehaviour:
   isMage: 0
   isTank: 0
   isRange: 0
-  CardGroup: {fileID: 0}
-  characterCard: {fileID: 0}
+  CardGroup: {fileID: 1054083660}
+  characterCard: {fileID: 1054083659}
   abilityCards: {fileID: 681458275}
 --- !u!114 &1849694537
 MonoBehaviour:
@@ -5599,6 +5670,10 @@ PrefabInstance:
     - target: {fileID: 4858061263776916407, guid: 250cdcdb520ea2f44a1ce74552a402e7, type: 3}
       propertyPath: m_Name
       value: EnemyCardGruop
+      objectReference: {fileID: 0}
+    - target: {fileID: 4858061263776916407, guid: 250cdcdb520ea2f44a1ce74552a402e7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
